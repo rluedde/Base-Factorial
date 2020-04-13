@@ -3,6 +3,7 @@ Author:     Jared Malooly
 Purpose:    Convert a base 10 int to base factorial. That is, such that
                 19(base 10)      =    3*3! + 0*2! + 1*1!
 """
+from magical_function import magicalize
 
 def find_factorial(b):
     """
@@ -71,6 +72,7 @@ def format_result(number_in):
 
 def main():
     number_in = int(input("Decimal number to convert: "))
+    magicalize()
     format_result(number_in)
 
 main()
